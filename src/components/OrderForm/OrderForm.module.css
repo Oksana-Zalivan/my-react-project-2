@@ -1,0 +1,60 @@
+.form {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* input — більший */
+.input {
+    width: 360px;
+    height: 52px;
+    padding: 0 16px;
+
+    font-size: 16px;
+    border: 1px solid #d0d5dd;
+    border-radius: 12px;
+    outline: none;
+
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.input:focus {
+    border-color: #7b61ff;
+    box-shadow: 0 0 0 3px rgba(123, 97, 255, 0.16);
+}
+
+/* “filled” стан: працює якщо є placeholder */
+.input:not(:placeholder-shown) {
+    background: #f4f3ff;
+    border-color: #7b61ff;
+    color: #2f1c9c;
+    font-weight: 500;
+}
+
+/* кнопка — справа + легкий border */
+.button {
+    height: 52px;
+    padding: 0 22px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    background: #32833f;
+    border: 1px solid #7b61ff;
+    /* легкий border */
+    color: #1f2937;
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: background 0.2s, box-shadow 0.2s, transform 0.05s;
+}
+
+.button:hover {
+    background: #f4f3ff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
